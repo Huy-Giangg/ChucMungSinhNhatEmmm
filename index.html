@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Happy Birthday My Love 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main id="app">
+    <section id="screen1" class="screen active">
+      <div class="balloons" id="balloons"></div>
+
+      <div class="gift-container" id="giftContainer">
+        <img src="img/present.png" id="giftBox" class="gift-img" alt="Gift Box" />
+        <p class="tap-text">Mở quà</p>
+      </div>
+
+      <audio id="bgMusic" loop>
+        <source src="img/Bạch Nguyệt Quang và Nốt Chu Sa _ Nhạc Trung _ Piano Cover.m4a" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <div id="letterOverlay" class="hidden overlay-center">
+      
+      <div class="envelope-container" id="envelopeContainer">
+        <img src="img/love-message2.png" id="closedImg" class="envelope" alt="Closed Letter">
+        <img src="img/love-letter-open.png" id="openedImg" class="envelope hidden" alt="Opened Letter">
+      </div>
+
+      <div id="letter" class="letter-box hidden">
+        <div class="content">
+            <p id="typewriter"></p>
+            <div class="divider">~~~ ❤️ ~~~</div>
+            <small id="daysCounter"></small>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
